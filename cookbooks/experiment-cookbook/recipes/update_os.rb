@@ -7,7 +7,7 @@
 # Update the Ubuntu OS for now. TODO: Make it generic for centos and Ubuntu later
 
 execute 'update_os' do
-  command 'apt-get update && apt-get upgrade'
+  command 'apt-get update && apt-get upgrade -y'
   action :run
 end
 
