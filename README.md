@@ -22,3 +22,12 @@ The config file, `.chef/knife.rb` is a repository specific configuration file fo
 # Next Steps
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
+
+TODO
+
+1. Make the file generic by using attribute and place holders.
+2. Start implementing unit test and integration test before deploying.
+3. Try adding more servers using role and environments.
+4. Make the recipe generic by applying condition from ohai and experiment it on cent machine.
+4. Make a custom resource for apache and web.
+
