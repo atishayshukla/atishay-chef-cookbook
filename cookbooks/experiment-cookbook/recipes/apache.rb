@@ -19,6 +19,7 @@ end
 # Start the service
 service 'apache2' do
   action [:enable, :start]
+  action :nothing
 end
 
 # Use template to get the attribute

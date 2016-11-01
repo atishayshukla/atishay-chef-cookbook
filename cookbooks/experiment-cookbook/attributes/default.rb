@@ -1,1 +1,1 @@
-default['experiment-cookbook']['message'] = "This is the change made in attribute"
+default['experiment-cookbook']['message'] = "Attribute value change test successful"
