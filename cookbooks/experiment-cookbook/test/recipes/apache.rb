@@ -5,14 +5,22 @@
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-unless os.windows?
-  describe user('root') do
-    it { should exist }
-    skip 'This is an example test, replace with your own test.'
-  end
+describe package( 'apache2' ) do
+  it { should be_installed }
+end
+
+describe service( 'apache2' ) do
+  it { should be_enabled }
+  it { should be_running }
+end
+
+describe file('/var/www/html/index.html') do
+  it { should be_file }
+  it { should exist }
+  its ('mode') { should cmp '0644'}
 end
 
 describe port(80) do
-  it { should_not be_listening }
-  skip 'This is an example test, replace with your own test.'
+  it { should be_listening }
+  its('processes') { should include 'apache2' }
 end
