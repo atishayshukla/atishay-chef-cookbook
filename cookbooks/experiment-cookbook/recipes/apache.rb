@@ -28,7 +28,7 @@ template '/var/www/html/index.html' do
   mode '0644'
   action :create
   variables(
-    :message => experiment-cookbook["message"]
+    :message => node["experiment-cookbook"]["message"]
   )
   notifies :restart, "service[apache2]"
 end
