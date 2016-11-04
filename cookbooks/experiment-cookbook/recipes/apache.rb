@@ -31,7 +31,7 @@ template '/var/www/html/index.html' do
   variables(
     :message => node["experiment-cookbook"]["message"]
   )
-  notifies :restart, "service[apache2]"
+  notifies [:start, :restart], "service[apache2]"
 end
 
 
