@@ -20,7 +20,7 @@ end
 service 'apache2' do
   supports :restart => true, :reload => true
   action :enable
-  subcribes :reload, 'template[/var/www/html/index.html]', :immediately
+  subscribes :reload, 'template[/var/www/html/index.html]', :immediately
 end
 
 # Use template to get the attribute
