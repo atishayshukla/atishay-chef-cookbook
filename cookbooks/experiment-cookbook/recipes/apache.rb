@@ -16,6 +16,10 @@ end
 #  mode '0644'  
 #end
 
+# Start the service
+service 'apache2' do
+  action [:enable, :start]  
+end
 
 # Use template to get the attribute
 # notifies here will restart the apache service
@@ -29,10 +33,7 @@ template '/var/www/html/index.html' do
   notifies [:restart], "service[apache2]"
 end
 
-# Start the service
-service 'apache2' do
-  action [:enable, :start]  
-end
+
 
 
 
