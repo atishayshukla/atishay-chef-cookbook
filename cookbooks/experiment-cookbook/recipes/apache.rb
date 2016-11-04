@@ -18,7 +18,9 @@ end
 
 # Start the service
 service 'apache2' do
-  action [:enable, :start]  
+  supports :restart => true, :reload => true
+  action :enable
+  subcribes :reload, 'template[/var/www/html/index.html]', :immediately
 end
 
 # Use template to get the attribute
