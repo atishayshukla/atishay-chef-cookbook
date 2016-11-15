@@ -1,4 +1,4 @@
 {
-	"run_list": [ "recipe[experiment-cookbook]" ]
+	"run_list": [ "role[dockerrole]" ]
 	
 }
