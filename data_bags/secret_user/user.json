@@ -1,4 +1,33 @@
 {
-    "id": "ashukla",
-    "key": "$1$tata$pYxO.sx.gos1/jnMsvxGB/"
+  "id": "user",
+  "name": {
+    "encrypted_data": "GrVAxxc7BCg2dhcz6wN+hMXNvBgKmXe0b5hlJ4GQKl8cH7Jx0qn941F8CtyR\nax90PToHU4exN1rJeoEWqbIr5A==\n",
+    "iv": "f0expiZYaHNrL4HjKQ6G8w==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "json_class": {
+    "encrypted_data": "aaxud3uBJaQ4yoFYx1vQR2u6Ll1VWcegMkOB5L+Q3M53neCL9YR6B23/vB91\nADLh\n",
+    "iv": "rJ8vjY/NsF3wt2az2jFnGg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "chef_type": {
+    "encrypted_data": "dEfeNHhn1B2hFYcKVzi7N5pA+RF6hZTlkL7kovZSeEkDN6X13MB3oJhUvVuf\nqvb9\n",
+    "iv": "ep3RE5PFYBiDBQ7GBGpr0w==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "data_bag": {
+    "encrypted_data": "2F0K162Y9SywsbX1+vMyWpCb7Th0IlJNEonQrCXtfps=\n",
+    "iv": "hQnSKzR8PrWZyv4fvhXuCw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "raw_data": {
+    "encrypted_data": "aeTPayN/OBtNbtRH7Q9+PFfGFtKlYIjzlR4dx7pgygXREGMLNxJrC2k961BS\nfEHYyYECpsn+f5PtFjGTvSBRxMbPHyqKKUs4K4sqhkOuc5o=\n",
+    "iv": "frjjBd6bQEPaMpqpUMfK7Q==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
 }
